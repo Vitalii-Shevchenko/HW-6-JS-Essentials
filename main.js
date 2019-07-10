@@ -20,10 +20,10 @@ function sumAll(n){
 
 // task #3
 
-function bombTimer(str,time){
+function bombTimer1(str,time){
     let timeToEnd=setInterval(function () {
-        console.log(time);
-        time = time - 1;
+        time=time||0;
+        console.log(time--)
     },1000);
     setTimeout(function () {
         clearInterval(timeToEnd);
@@ -31,7 +31,6 @@ function bombTimer(str,time){
 
     },time*1000)
 }
-
 
 
 // Task #4
