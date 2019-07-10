@@ -23,14 +23,15 @@ function sumAll(n){
 function bombTimer(str,time){
     let timeToEnd=setInterval(function () {
         console.log(time);
-        timeToEnd=time-1;
+        time = time - 1;
     },1000);
     setTimeout(function () {
-        clearInterval(timer);
+        clearInterval(timeToEnd);
         console.log(str)
 
     },time*1000)
 }
+
 
 
 // Task #4
@@ -42,6 +43,21 @@ function factorial(n){
         return n * factorial(n-1);
     }
 }
+
+// Task #5
+
+function bombTimer(str,time){
+    let timeToEnd=setInterval(function () {
+        console.log(time);
+        time = time - 1;
+    },1000);
+    setTimeout(function () {
+        clearInterval(timeToEnd);
+        console.log(str)
+
+    },time*1000)
+}
+
 
 
 // Task#6
